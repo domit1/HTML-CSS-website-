@@ -1,0 +1,137 @@
+.header {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(213, 213, 213);
+  z-index: 1000;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 62px;
+  border-radius: 15px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.middle-section {
+  flex: 1;
+  margin-left: 40px;
+  margin-right: 40px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  flex: 1;
+  width: 30px;
+  height: 34px;
+  padding-left: 12px;
+  font-size: 12px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(191, 191, 191);
+  border-bottom-left-radius: 22px;
+  border-top-left-radius: 22px;
+}
+
+.search-bar::placeholder {
+  font-family: Roboto, Arial;
+  font-size: 15px;
+  transform: translateY(2px);
+}
+
+.search-button {
+  width: 60px;
+  height: 40px;
+  border-bottom-right-radius: 22px;
+  border-top-right-radius: 22px;
+  cursor: pointer;
+}
+
+.search-icon {
+  height: 20px;
+  margin-top: 3px;
+  margin-right: 5px;
+  background-color: rgb(240, 240, 240);
+}
+
+.right-section {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 15px; /* Add spacing between icon elements */
+}
+
+.icon-container img {
+  height: 27px;
+}
+
+.icon-text {
+  margin-left: 5px;
+  font-weight: bold;
+  color: black;
+  display: inline;
+  border-bottom: 2px solid transparent; /* Add a transparent bottom border */
+  transition: border-bottom 0.3s; /* Apply a transition to the bottom border */
+}
+
+.icon-container:hover .icon-text {
+  border-bottom: 2px solid black; /* Add a bottom border with color on hover */
+}
+
+@media (max-width: 679px) {
+  /* Hide the text and only show the icons in the "right section" */
+  .icon-container .icon-text {
+    display: none;
+  }
+  .right-section {
+    width: 200px;
+  }
+  .middle-section {
+    margin-left: 0px;
+    margin-right: 50px;
+  }
+  .search-button {
+    width: 37px;
+  }
+  .logo {
+    margin-left: 3px;
+  }
+  .search-bar::placeholder {
+    font-size: 23px;
+  }
+  .icon-container {
+    margin-right: 20px; 
+  }
+  .icon-container img {
+    height: 35px;
+  }
+  .left-section{
+    display: none;
+  }
+  
+}
+

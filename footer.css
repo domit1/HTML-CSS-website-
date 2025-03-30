@@ -1,0 +1,84 @@
+/* Existing CSS */
+
+.site-footer {
+  background-color: darkslateblue;
+  color: white;
+  text-align: center;
+  padding: 50px 0; /* Adjust padding */
+  margin-top: 50px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto; /* Center the footer within its container */
+  max-width: 1200px; /* Add a maximum width to limit the footer's width */
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+ul, p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.social-media-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-media-icons a {
+  margin: 0 10px;
+}
+
+.facebook, .twitter, .instagram {
+  height: 35px;
+  margin-right: 12px;
+}
+
+/* Add a media query for screens with a maximum width of 679px */
+@media (max-width: 679px) {
+  h2 {
+    font-size: 2rem; /* Increase the font size for h2 elements */
+  }
+  ul, p {
+    font-size: 1.2rem; /* Increase the font size for ul and p elements */
+  }
+}
+
+
+.login-window {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    /* Style the login window as needed */
+}
